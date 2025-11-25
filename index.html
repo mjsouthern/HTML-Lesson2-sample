@@ -129,17 +129,6 @@
             }
         }
 
-        function switchTheme() {
-            // Demonstrates using an ID and JavaScript to change style
-            const page = document.getElementById("page-root");
-            if (page.style.backgroundColor === "rgb(245, 247, 251)" || page.style.backgroundColor === "") {
-                page.style.backgroundColor = "#111827";
-                page.style.color = "#f9fafb";
-            } else {
-                page.style.backgroundColor = "#f5f7fb";
-                page.style.color = "#222";
-            }
-        }
     </script>
 
 </head>
@@ -181,7 +170,6 @@
 
                 <!-- Buttons using JavaScript -->
                 <button class="primary-btn" onclick="toggleMessage()">Toggle Info Message</button>
-                <button class="primary-btn" onclick="switchTheme()">Switch Theme</button>
 
                 <p id="info-message" class="hidden-message">
                     JavaScript is working! &#127881; You just toggled this message using a button.
