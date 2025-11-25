@@ -133,163 +133,163 @@
 
 </head>
 <body id="page-root">
-<div class="wrapper">
+    <div class="wrapper">
 
-    <!-- Semantic header with ID and class -->
-    <header id="top-header" class="section-header">
-        <h1>Interactive InfoHub</h1>
-        <p>Advanced HTML Demonstration &#128526;</p>
-    </header>
+        <!-- Semantic header with ID and class -->
+        <header id="top-header" class="section-header">
+            <h1>Interactive InfoHub</h1>
+            <p>Advanced HTML Demonstration &#128526;</p>
+        </header>
 
-    <!-- Semantic navigation -->
-    <nav>
-        <a href="#layout">Layout</a>
-        <a href="#code">Code Samples</a>
-        <a href="#symbols">Symbols & Emojis</a>
-        <a href="#xhtml">HTML vs XHTML</a>
-    </nav>
+        <!-- Semantic navigation -->
+        <nav>
+            <a href="#layout">Layout</a>
+            <a href="#code">Code Samples</a>
+            <a href="#symbols">Symbols & Emojis</a>
+            <a href="#xhtml">HTML vs XHTML</a>
+        </nav>
 
-    <!-- MAIN LAYOUT AREA -->
-    <div class="container">
+        <!-- MAIN LAYOUT AREA -->
+        <div class="container">
 
-        <!-- Main content using section/article and divs with classes -->
-        <section class="main-section">
+            <!-- Main content using section/article and divs with classes -->
+            <section class="main-section">
 
-            <!-- Layout / Div / Classes / IDs / Buttons / JS -->
-            <article id="layout" class="card">
-                <h2>1. Layout, Divs, Classes, IDs & Buttons</h2>
+                <!-- Layout / Div / Classes / IDs / Buttons / JS -->
+                <article id="layout" class="card">
+                    <h2>1. Layout, Divs, Classes, IDs & Buttons</h2>
 
-                <div class="info-box">
-                    <p>
-                        This <code>&lt;article&gt;</code> is wrapped inside a semantic
-                        <code>&lt;section&gt;</code>. We use a <strong>div-based layout</strong>
-                        with reusable classes like <code>.container</code>, <code>.card</code>, and a unique ID
-                        <code>#top-header</code> for the page header.
+                    <div class="info-box">
+                        <p>
+                            This <code>&lt;article&gt;</code> is wrapped inside a semantic
+                            <code>&lt;section&gt;</code>. We use a <strong>div-based layout</strong>
+                            with reusable classes like <code>.container</code>, <code>.card</code>, and a unique ID
+                            <code>#top-header</code> for the page header.
+                        </p>
+                    </div>
+
+                    <!-- Buttons using JavaScript -->
+                    <button class="primary-btn" onclick="toggleMessage()">Toggle Info Message</button>
+
+                    <p id="info-message" class="hidden-message">
+                        JavaScript is working! &#127881; You just toggled this message using a button.
                     </p>
-                </div>
+                </article>
 
-                <!-- Buttons using JavaScript -->
-                <button class="primary-btn" onclick="toggleMessage()">Toggle Info Message</button>
+                <!-- Iframe + Responsive Example -->
+                <article class="card">
+                    <h2>2. Embedded Content with Iframe</h2>
+                    <p>
+                        Below is an embedded YouTube video using an <code>&lt;iframe&gt;</code>.
+                        The iframe uses a relative width percentage to help responsiveness.
+                    </p>
+                    <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:8px;">
+                        <iframe style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" src="https://www.youtube.com/embed/qz0aGYrrlhU?si=l3TdMHTcJTKbjxBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </article>
 
-                <p id="info-message" class="hidden-message">
-                    JavaScript is working! &#127881; You just toggled this message using a button.
-                </p>
-            </article>
+                <!-- File paths + image -->
+                <article class="card">
+                    <h2>3. File Paths and Relative Image</h2>
+                    <p>
+                        The image below is loaded from a <em>relative file path</em>:
+                        <code>images/profile.jpg</code>.
+                    </p>
+                    <img src="images/mark.jpg" alt="Sample profile photo"
+                        style="max-width: 160px; border-radius: 10%; border: 3px solid #004b8d;">
+                </article>
 
-            <!-- Iframe + Responsive Example -->
-            <article class="card">
-                <h2>2. Embedded Content with Iframe</h2>
+                <!-- Computercode tags -->
+                <article id="code" class="card">
+                    <h2>4. Computer Code Tags</h2>
+                    <p>We can show code and computer-related text using special tags:</p>
+
+                    <div class="code-block">
+                        <pre><code>&lt;pre&gt; and &lt;code&gt; show preformatted code:
+
+                        function hello() {
+                            console.log("Hello, world!");
+                        }
+                        </code></pre>
+                    </div>
+
+                    <p>
+                        Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your file.  
+                        Program output example using <code>&lt;samp&gt;</code>:
+                        <samp>Build successful. No errors found.</samp>
+                    </p>
+                </article>
+
+                <!-- Entities, symbols, emojis, URL encoding -->
+                <article id="symbols" class="card">
+                    <h2>5. Entities, Symbols, Emojis & URL Encoding</h2>
+                    <p>
+                        HTML <strong>entities</strong> and <strong>symbols</strong>:
+                        &copy; 2025 InfoHub &mdash; All rights reserved.  
+                        Heart symbol: &hearts;  
+                        Check symbol: &#10003; (✓)
+                    </p>
+                    <p>
+                        Emojis add expression: &#128516;&#128640;&#127793;
+                    </p>
+                    <p>
+                        Example of a URL-encoded search query:
+                    </p>
+                    <div class="code-block">
+                        <code>https://example.com/search?query=HTML%20Advanced%20Topics%21</code>
+                    </div>
+                </article>
+
+                <!-- HTML vs XHTML -->
+                <article id="xhtml" class="card">
+                    <h2>6. HTML vs XHTML</h2>
+                    <p>Below is a simple comparison of HTML and XHTML syntax:</p>
+
+                    <div class="code-block">
+                        <pre><code>&lt;!-- HTML version (not self-closed) --&gt;
+                        &lt;img src="images/profile.jpg" alt="Profile image"&gt;
+
+                        &lt;!-- XHTML-style version (self-closed, lowercase, quoted attributes) --&gt;
+                        &lt;img src="images/profile.jpg" alt="Profile image" /&gt;
+                        </code></pre>
+                    </div>
+
+                    <p>
+                        XHTML is stricter and requires properly closed tags, lowercase names, and quoted attributes.
+                    </p>
+                </article>
+
+            </section>
+
+            <!-- Sidebar using semantic aside -->
+            <aside class="sidebar">
+                <h3>Quick Info Panel</h3>
                 <p>
-                    Below is an embedded YouTube video using an <code>&lt;iframe&gt;</code>.
-                    The iframe uses a relative width percentage to help responsiveness.
+                    This <code>&lt;aside&gt;</code> acts as a sidebar. It demonstrates
+                    how semantic tags improve layout and meaning.
                 </p>
-                <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:8px;">
-                    <iframe style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" src="https://www.youtube.com/embed/qz0aGYrrlhU?si=l3TdMHTcJTKbjxBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </article>
-
-            <!-- File paths + image -->
-            <article class="card">
-                <h2>3. File Paths and Relative Image</h2>
                 <p>
-                    The image below is loaded from a <em>relative file path</em>:
-                    <code>images/profile.jpg</code>.
+                    This page follows a simple <strong>style guide</strong>:
+                    lowercase tag names, consistent indentation, semantic elements,
+                    meaningful class and ID names, and UTF-8 charset.
                 </p>
-                <img src="images/mark.jpg" alt="Sample profile photo"
-                     style="max-width: 160px; border-radius: 10%; border: 3px solid #004b8d;">
-            </article>
-
-            <!-- Computercode tags -->
-            <article id="code" class="card">
-                <h2>4. Computer Code Tags</h2>
-                <p>We can show code and computer-related text using special tags:</p>
-
+                <p>
+                    Character encoding is defined using:
+                </p>
                 <div class="code-block">
-                    <pre><code>&lt;pre&gt; and &lt;code&gt; show preformatted code:
-
-                    function hello() {
-                        console.log("Hello, world!");
-                    }
-                    </code></pre>
+                    <code>&lt;meta charset="UTF-8"&gt;</code>
                 </div>
+            </aside>
 
-                <p>
-                    Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your file.  
-                    Program output example using <code>&lt;samp&gt;</code>:
-                    <samp>Build successful. No errors found.</samp>
-                </p>
-            </article>
+        </div>
 
-            <!-- Entities, symbols, emojis, URL encoding -->
-            <article id="symbols" class="card">
-                <h2>5. Entities, Symbols, Emojis & URL Encoding</h2>
-                <p>
-                    HTML <strong>entities</strong> and <strong>symbols</strong>:
-                    &copy; 2025 InfoHub &mdash; All rights reserved.  
-                    Heart symbol: &hearts;  
-                    Check symbol: &#10003; (✓)
-                </p>
-                <p>
-                    Emojis add expression: &#128516;&#128640;&#127793;
-                </p>
-                <p>
-                    Example of a URL-encoded search query:
-                </p>
-                <div class="code-block">
-                    <code>https://example.com/search?query=HTML%20Advanced%20Topics%21</code>
-                </div>
-            </article>
-
-            <!-- HTML vs XHTML -->
-            <article id="xhtml" class="card">
-                <h2>6. HTML vs XHTML</h2>
-                <p>Below is a simple comparison of HTML and XHTML syntax:</p>
-
-                <div class="code-block">
-                    <pre><code>&lt;!-- HTML version (not self-closed) --&gt;
-                    &lt;img src="images/profile.jpg" alt="Profile image"&gt;
-
-                    &lt;!-- XHTML-style version (self-closed, lowercase, quoted attributes) --&gt;
-                    &lt;img src="images/profile.jpg" alt="Profile image" /&gt;
-                    </code></pre>
-                </div>
-
-                <p>
-                    XHTML is stricter and requires properly closed tags, lowercase names, and quoted attributes.
-                </p>
-            </article>
-
-        </section>
-
-        <!-- Sidebar using semantic aside -->
-        <aside class="sidebar">
-            <h3>Quick Info Panel</h3>
+        <!-- Semantic footer with entities and symbols -->
+        <footer>
             <p>
-                This <code>&lt;aside&gt;</code> acts as a sidebar. It demonstrates
-                how semantic tags improve layout and meaning.
+                Built with advanced HTML concepts &middot; InfoHub Sample &nbsp;&starf; &nbsp; &copy; 2025
             </p>
-            <p>
-                This page follows a simple <strong>style guide</strong>:
-                lowercase tag names, consistent indentation, semantic elements,
-                meaningful class and ID names, and UTF-8 charset.
-            </p>
-            <p>
-                Character encoding is defined using:
-            </p>
-            <div class="code-block">
-                <code>&lt;meta charset="UTF-8"&gt;</code>
-            </div>
-        </aside>
+        </footer>
 
     </div>
-
-    <!-- Semantic footer with entities and symbols -->
-    <footer>
-        <p>
-            Built with advanced HTML concepts &middot; InfoHub Sample &nbsp;&starf; &nbsp; &copy; 2025
-        </p>
-    </footer>
-
-</div>
 </body>
 </html>
